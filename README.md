@@ -28,9 +28,9 @@ The point of all of it: **a journal that can visualize every part of writing.**
 
 ---
 
-## How it works (no code, just the concept)
+## How it works
 
-I write on my XP-Pen tablet straight onto the right-hand page. While I write, the book records:
+I write on my XP-Pen tablet straight onto the right-hand page. While I write, the book records and displays:
 
 - **Pressure**: exactly as the pen reports it, never smoothed or rescaled by how the ink looks
 - **Speed**: how fast the nib is moving at every point
@@ -47,13 +47,13 @@ Every page saves itself as I go, with its strokes, its labels, and its art layer
 
 ### Layers
 
-The open page can be shown in different **layers**, picked like the layers on a map:
+The open page can be shown in different **layers**:
 
 - **As written**: plain ink
 - **Pressure**: ink coloured from light cyan (soft) to red (hard)
 - **Speed**: from slow amber to fast blue
 - **Tilt**: from upright olive to leaning violet
-- **Graphs**: small graphs drawn under each line of writing, lined up so a dip in the graph sits right under the letter that made it
+- **Graphs**: small graphs drawn under each line of writing representing one or all measurements, lined up so a dip in the graph sits right under the letter that made it
 - **Stroke ends / Ends joined**: each stroke cut down to just where it started and where it lifted
 - **Negative**: dark page, light ink, which works with every layer
 
@@ -71,7 +71,7 @@ The same Janus drawing in three layers: pressure, speed, and stroke ends.
 
 ### The Measure tab
 
-The workbench slides out from the right side of the book. The Measure tab shows the writing live as it happens: level bars, a rolling graph, and a **spectrum** that lays the pen's rhythm out the way a music equalizer shows sound. It also has graphs of the whole page in time, and of the whole page **on the clock**, where every row is the same number of real seconds, so a long pause takes up as much room as it actually took.
+A workbench slides out from the right side of the book. The Measure tab shows the writing live as it happens: level bars, a rolling graph, and a **spectrum** that lays the pen's rhythm out the way a music equalizer shows frequencies. It also has graphs of the whole page in time, and of the whole page **on the clock**, where every row is the same number of real seconds, so a long pause takes up as much room as it actually took.
 
 <p align="center">
   <img src="screenshots/11-measure-tab.jpg" alt="The Measure tab: live bars, spectrum, and full-page graphs beside the open book">
@@ -93,7 +93,7 @@ Looked at square-on as time against pressure, the drawing turns into a skyline o
 
 ### The glyph view
 
-Turn the 3D view so you're looking at left-right position against pressure, and every letter turns into its own rune-like glyph. **The same letter keeps the same glyph** no matter the size, speed, or pressure I wrote it with. This is the Fourth Amendment page in that view:
+Turn the 3D view so you're looking at left-right position against pressure, and every letter turns into its own rune-like glyph. **The same letter keeps the same glyph** no matter the size, speed, or pressure I wrote it with. This page is a piece of writing (4th Amendment) in that view:
 
 <p align="center">
   <img src="screenshots/13-glyph-view.jpg" width="700" alt="The Fourth Amendment page plotted as left-right against pressure">
@@ -127,10 +127,9 @@ Any page can be exported as SVG, PDF, or JPG, in any layer, with a key under eac
 
 After I write, I tell the book what the writing **truly says**, right against the ink.
 
-The book splits the page into lines and words. Then I go word by word: I type the word, and the book gives each letter its share of the ink, shown in its own colour. If a letter's ink is split wrong, I pick that letter and rub the pen over the ink that belongs to it. Words can be split, merged, cut apart, or moved to the right line, and a letter that's truly unclear can keep a second reading.
+The book splits the page into lines and words. Then I go word by word: I type the word, and the book gives each letter its share of the ink, shown in its own colour. If a letter's ink is split wrong, I pick that letter and rub the pen over the ink that belongs to it. Words can be split, merged, cut apart, or moved to the next line.
 
 Once a page is labeled, every measurement is tied to a real letter. From there the book can:
-
 - show the labels on the page itself, with the typed word under the writing
 - sort each line's graph by letter, so a dip lines up with the letter that made it
 - stack **every copy of a letter I've ever written** on top of each other, with its size, speed, pressure, lean, and how far each copy strays from my usual shape
@@ -154,14 +153,14 @@ The more I label, the better the book's first guess at my letters gets.
 
 Each page has its own art, built in **layers** like coats of paint. Each layer is one **brush** with its dials set.
 
-Any dial can be wired to the writing itself, like pen pressure or writing speed, or to time, the page turning, a slow wobble, or a steady pulse. A page's art starts fresh every time I turn to it and replays on its own. It never changes the ink underneath, because it's drawn on see-through sheets over the page.
+Any dial can be wired to the writing itself, like pen pressure or writing speed, or to time, the page turning, a slow wobble, or a steady pulse. A page's art starts fresh every time I turn to it and replays on its own. It never changes the ink underneath.
 
 Some of the brushes that come with the book:
 
-- **Lightning**: the page goes dark and bolts run along the writing
+- **Lightning**: the page goes dark and bolts run through the writing
 - **Embers**: sparks lift off wherever I pressed hardest
 - **Smoke**: the writing evaporates, piece by piece
-- **Rings**: a portrait of how the page was written, one ring per stroke
+- **Rings**: a portrait of how the page was written, using colored rings where the pen began a stroke
 - **Replay**: the page writes itself again
 - **Build your own**: put a brush together from parts (where it comes from, when, how it moves, how it looks, how long it lasts)
 
@@ -173,7 +172,7 @@ Some of the brushes that come with the book:
 
 This is the part I'm most excited about. The book has its own **brush workbench built in**, so new brushes can be written, run on the open page, and saved without ever leaving the book. Every dial a brush has turns into a slider in the workbench, and a mistake in a brush only switches that one layer off. It can't break the book. Every save keeps the version before it, so nothing gets lost to a bad edit.
 
-A brush gets handed the full recording of the page: every point with its pressure, speed, tilt and timing, the labels, and even the page in 3D. That opens up a lot of possibilities:
+A brush gets access to the full recording of the page: every point with its pressure, speed, tilt and timing, the labels, and even the page in 3D. That opens up a lot of possibilities:
 
 - brushes that react **differently to each letter**, since the letters are labeled
 - brushes driven by **rhythm**, using the spectrum of how my hand moves
@@ -184,24 +183,5 @@ A brush gets handed the full recording of the page: every point with its pressur
 
 ---
 
-## Privacy
-
-The Book runs only on my own computer.
-
-- My phone can view the book over my home Wi-Fi, but only after I switch it on with a one-time QR code and PIN. A phone can never write, erase, or label.
-- A password unlocks the extra phone tools and **hidden pages**, which the book skips completely while it's locked.
-- Only the book's own window can change pages, so a website open in another tab can't touch them.
-
----
-
-## Where it's going
-
-- **3D letters**, with pressure as depth
-- **Letter-by-letter pressure data** alongside the labeling
-- More notebook styles: a plain page, and eventually a **"bare void"** where writing can go anywhere, with no page edges
-- Labeling for handwriting from outside the book
-- A new themed page every day, so the book keeps growing as its own art collection
-
----
 
 <p align="center"><i>Designed and directed by Jessie · Built on Windows with an XP-Pen tablet · Source private</i></p>
